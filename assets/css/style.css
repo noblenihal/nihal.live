@@ -539,3 +539,75 @@ a.proj:hover .proj-media img { transform: scale(1.035); }
   .contact { padding: 90px 0 100px; }
   .contact-actions .btn { width: 100%; }
 }
+
+
+/* =========================================================
+   Business-first pass
+   ========================================================= */
+.hero h1 .hl { color: var(--purple); }
+.hero-tagline { font-style: italic; font-weight: 400; color: #3a3a37; }
+
+/* Hero: clean portrait, nothing on or around the photo */
+.hero-visual { display: grid; place-items: center; height: auto; min-height: 500px; }
+.hero-visual .hv-photo {
+  position: relative; right: auto; bottom: auto; width: min(420px, 86%); aspect-ratio: 4 / 5;
+  border-radius: 32px; overflow: hidden; background: #6a4fd8; box-shadow: var(--shadow-float);
+}
+.hero-visual .hv-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 18%; }
+.hv-glow {
+  position: absolute; width: 80%; aspect-ratio: 1; border-radius: 50%; pointer-events: none;
+  background: radial-gradient(circle, rgba(115, 90, 229, .45), rgba(124, 196, 255, .28) 45%, transparent 70%);
+  filter: blur(30px);
+}
+
+/* Services */
+.ai-sub { margin-top: 14px; color: #b8b8b2; font-size: 16px; }
+.svc-grid { margin-top: 40px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.svc {
+  display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: center;
+  background: linear-gradient(180deg, #232321, #1b1b19); border: 1px solid #2c2c29;
+  border-radius: var(--radius-md); padding: 26px 28px;
+}
+.svc h3 { color: #fff; font-size: 24px; margin-bottom: 8px; }
+.svc p { color: #b8b8b2; font-size: 15px; }
+.svc-stat { text-align: right; min-width: 118px; }
+.svc-stat b { display: block; font-family: var(--font-display); font-size: 40px; font-weight: 600; color: var(--lime); line-height: 1; }
+.svc-stat small { display: block; margin-top: 6px; color: #9a9a94; font-size: 12.5px; }
+.svc-link { margin-top: 28px; }
+
+/* Technical detail stays, but quietly */
+.tags { color: var(--muted); font-weight: 500; }
+
+@media (max-width: 1080px) { .hero-visual { min-height: 0; padding-top: 8px; } }
+@media (max-width: 860px) { .svc-grid { grid-template-columns: 1fr; } }
+@media (max-width: 560px) {
+  .hero-visual { height: auto; }
+  .hero-visual .hv-photo { width: 84%; right: auto; }
+  .svc { grid-template-columns: 1fr; gap: 12px; padding: 22px; }
+  .svc-stat { text-align: left; order: -1; }
+}
+
+/* Hero doodles: business sketches in brand purple, faded out under the copy */
+.hero-doodles {
+  position: absolute; inset: 0; pointer-events: none;
+  background: url('../img/hero-doodles.webp?v=3') center top / 1500px auto repeat;
+  opacity: .2;
+  -webkit-mask-image: radial-gradient(ellipse 46% 62% at 27% 52%, transparent 30%, #000 82%);
+          mask-image: radial-gradient(ellipse 46% 62% at 27% 52%, transparent 30%, #000 82%);
+}
+@media (max-width: 1080px) {
+  .hero-doodles {
+    background-size: 1000px auto; opacity: .13;
+    -webkit-mask-image: linear-gradient(180deg, #000 0, rgba(0,0,0,.35) 30%, rgba(0,0,0,.35) 70%, #000 100%);
+            mask-image: linear-gradient(180deg, #000 0, rgba(0,0,0,.35) 30%, rgba(0,0,0,.35) 70%, #000 100%);
+  }
+}
+
+/* Awards card spans the full row */
+.exp-wide { grid-column: 1 / -1; }
+.exp-wide .award-list { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 860px) { .exp-wide .award-list { grid-template-columns: 1fr; } }
+
+/* Calm hero actions (no form) */
+.hero-actions { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 12px; }
+@media (max-width: 560px) { .hero-actions .btn { flex: 1 1 100%; } }

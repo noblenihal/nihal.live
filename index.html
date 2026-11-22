@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css?v=9" />
+  <link rel="stylesheet" href="assets/css/style.css?v=16" />
   <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
@@ -39,17 +39,17 @@
       <span class="brand-name">Nihal Gupta</span>
     </a>
     <ul class="nav-links" id="nav-links">
+      <li><a href="#services">Services</a></li>
       <li><a href="#work">Work</a></li>
       <li><a href="#impact">Impact</a></li>
-      <li><a href="#ai">AI</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#stack">Stack</a></li>
       <li class="nav-links-cta"><a class="btn btn-outline" href="assets/Nihal-Gupta-Resume.pdf" target="_blank" rel="noopener">Résumé</a></li>
-      <li class="nav-links-cta"><a class="btn btn-solid" href="#contact">Hire me</a></li>
+      <li class="nav-links-cta"><a class="btn btn-solid" href="#contact">Contact</a></li>
     </ul>
     <div class="nav-cta">
       <a class="btn btn-outline" href="assets/Nihal-Gupta-Resume.pdf" target="_blank" rel="noopener">Résumé</a>
-      <a class="btn btn-solid" href="#contact">Hire me</a>
+      <a class="btn btn-solid" href="#contact">Contact</a>
     </div>
     <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
       <span></span><span></span>
@@ -61,54 +61,28 @@
 
 <!-- ============ HERO ============ -->
 <section class="hero">
+  <div class="hero-doodles" aria-hidden="true"></div>
   <div class="hero-glow" aria-hidden="true"></div>
   <div class="container hero-grid">
     <div class="hero-copy">
-      <p class="eyebrow"><span class="dot"></span> Software Engineer · Full Stack · 3.5 yrs</p>
-      <h1>Nihal Gupta, Building Software that Scales Business</h1>
-      <p class="hero-tagline">I aim for nothing less than <span>perfection</span>.</p>
-      <p class="hero-sub">Logistics, ads, customer support and agentic AI, built end to end in Go, Node.js and React and running at 25,000+ orders a day.</p>
+      <p class="eyebrow"><span class="dot"></span> Nihal Gupta · Software Engineer</p>
+      <h1>Building software that <span class="hl">scales your business</span>.</h1>
+      <p class="hero-tagline">“I aim for nothing less than perfection.”</p>
+      <p class="hero-sub">I build the software behind online stores, deliveries, ads and customer support, from the first idea to the day it scales.</p>
 
       <p class="hero-label">Let’s build something together</p>
       <form class="hero-form" action="mailto:nihalgupta11213@gmail.com" method="get">
         <span class="hero-form-prefix">@</span>
-        <input type="text" name="subject" placeholder="Tell me about your role or project" aria-label="What would you like to talk about?" />
-        <button type="submit" class="btn btn-soft">Get in touch</button>
+        <input type="text" name="subject" placeholder="What should we build for your business?" aria-label="What should we build for your business?" />
+        <button type="submit" class="btn btn-soft">Let’s talk</button>
       </form>
-      <p class="hero-fine">Or write to <a href="mailto:nihalgupta11213@gmail.com">nihalgupta11213@gmail.com</a> · <a href="https://www.linkedin.com/in/nihal-gupta-sde/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/noblenihal" target="_blank" rel="noopener">GitHub</a></p>
+      <p class="hero-fine">Or write to <a href="mailto:nihalgupta11213@gmail.com">nihalgupta11213@gmail.com</a> · <a href="https://www.linkedin.com/in/nihal-gupta-sde/" target="_blank" rel="noopener">LinkedIn</a></p>
     </div>
 
-    <div class="hero-visual" aria-hidden="true">
-      <div class="hv-card hv-orders">
-        <div class="hv-head"><span class="hv-logo hv-logo-blue">D</span><b>Dropship India</b><span class="pill pill-green">Live</span></div>
-        <p class="hv-k">Orders today</p>
-        <p class="hv-big">25,000+</p>
-        <div class="hv-bars"><i style="--h:40%"></i><i style="--h:55%"></i><i style="--h:48%"></i><i style="--h:70%"></i><i style="--h:62%"></i><i style="--h:85%"></i><i style="--h:100%"></i></div>
-      </div>
-
-      <div class="hv-card hv-chat">
-        <div class="hv-head"><span class="hv-logo hv-logo-teal">✦</span><b>AI Support</b></div>
-        <p class="bubble bubble-user">I need a refund</p>
-        <p class="bubble bubble-bot">Your ₹53.50 refund was processed on 19 Nov ✓</p>
-      </div>
-
+    <div class="hero-visual">
+      <div class="hv-glow" aria-hidden="true"></div>
       <div class="hv-photo">
-        <img src="assets/img/nihal.webp" alt="" width="640" height="640" />
-      </div>
-
-      <div class="hv-card hv-ship">
-        <span class="hv-check">✓</span>
-        <div><b>Ready to Ship</b><small>7+ courier partners</small></div>
-      </div>
-
-      <div class="hv-card hv-roas">
-        <small>Ad revenue / day</small>
-        <b>₹5L+</b>
-        <span class="pill pill-purple">↑ 30% via SDK</span>
-      </div>
-
-      <div class="hv-orbit">
-        <span>Go</span><span>TS</span><span>AI</span><span>K8s</span>
+        <img src="assets/img/nihal-headshot.webp?v=2" alt="Nihal Gupta" width="1100" height="1100" />
       </div>
     </div>
   </div>
@@ -117,7 +91,7 @@
 <!-- ============ DARK BAND: products marquee ============ -->
 <section class="band-dark" aria-label="Products I've shipped">
   <div class="container">
-    <p class="band-title">Products I’ve taken <b>from zero to production</b></p>
+    <p class="band-title">Products I’ve built that <b>people and businesses use every day</b></p>
   </div>
   <div class="marquee" data-speed="38">
     <div class="marquee-track">
@@ -135,22 +109,49 @@
   </div>
 </section>
 
+<!-- ============ SERVICES ============ -->
+<section class="ai" id="services">
+  <div class="ai-mesh" aria-hidden="true"></div>
+  <div class="container">
+    <h2 class="reveal">The Problems<br/><span class="lime">I Solve</span></h2>
+    <div class="svc-grid">
+      <article class="svc">
+        <div><h3>Sell &amp; ship online</h3><p>Online stores, product catalogues, order tracking, returns and courier integrations that keep up when orders spike.</p></div>
+        <div class="svc-stat"><b>7+</b><small>courier partners</small></div>
+      </article>
+      <article class="svc">
+        <div><h3>Turn ads into revenue</h3><p>Ad platforms and campaign dashboards that show brands what every rupee earns, and help them earn more.</p></div>
+        <div class="svc-stat"><b>₹5L+</b><small>ad revenue a day</small></div>
+      </article>
+      <article class="svc">
+        <div><h3>Support customers 24/7</h3><p>A helpdesk plus an AI assistant that answers order and refund questions instantly and hands off to people when it matters.</p></div>
+        <div class="svc-stat"><b>24/7</b><small>instant answers</small></div>
+      </article>
+      <article class="svc">
+        <div><h3>Automate the busywork</h3><p>AI agents and price tracking that take repetitive work off your team, so they can focus on growth.</p></div>
+        <div class="svc-stat"><b>−90%</b><small>manual work</small></div>
+      </article>
+    </div>
+    <a href="#work" class="link svc-link">See the work <span aria-hidden="true">→</span></a>
+  </div>
+</section>
+
 <!-- ============ STACKED WORK CARDS ============ -->
 <section class="section" id="work">
   <div class="container">
     <h2 class="reveal">Why Teams Trust What I Build</h2>
-    <p class="lede reveal">More than features. I own products from the database to the dashboard: commerce, support, consumer apps and the data underneath them. Here is the work.</p>
+    <p class="lede reveal">Real products with real users and real revenue. Here’s what I built, and what it did for the business.</p>
   </div>
 
   <div class="container stack">
 
-    <!-- 1/4 -->
+    <!-- 1/3 -->
     <article class="stack-card sc-1" style="--i:0">
       <header class="sc-head">
-        <span class="sc-count">1/4</span>
+        <span class="sc-count">1/3</span>
         <div class="sc-title">
           <span class="sc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 8 12 3 3 8v8l9 5 9-5V8Z M3 8l9 5 9-5 M12 13v8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
-          <h3>Commerce &amp; logistics</h3>
+          <h3>Selling &amp; shipping online</h3>
         </div>
       </header>
       <div class="sc-grid">
@@ -158,8 +159,8 @@
           <div class="proj-media" style="background:linear-gradient(180deg,#99affc,#99b0fd,#99b0fc) left/50% 100% no-repeat,linear-gradient(180deg,#99affb,#99b0fc,#99b0fc) right/50% 100% no-repeat"><img src="assets/img/projects/dropship-india.webp" alt="Dropship India seller dashboard with product grid, WhatsApp tracking and shipping label" loading="lazy" width="1400" height="1050" /></div>
           <div class="proj-body">
             <div class="proj-top"><h4>Dropship India &amp; ShipPrime</h4><span class="arrow" aria-hidden="true">↗</span></div>
-            <p>One Go + React platform powering two Shopify apps: catalogue, orders, NDR, returns and WhatsApp tracking.</p>
-            <ul class="metrics"><li><b>25K+</b> orders/day</li><li><b>₹1 Cr+</b> GMV/day</li><li><b>7+</b> couriers</li></ul>
+            <p>Two Shopify apps that let sellers list products, ship anywhere in India and track every order, on one platform I built from scratch.</p>
+            <ul class="metrics"><li><b>2</b> Shopify apps</li><li><b>₹1 Cr+</b> sales a day</li><li><b>7+</b> courier partners</li></ul>
             <span class="tags">Golang · React · Shopify · Logistics APIs</span>
           </div>
         </a>
@@ -167,21 +168,21 @@
           <div class="proj-media" style="background:linear-gradient(180deg,#d9d0fc,#d3c7fb,#b798f2) left/50% 100% no-repeat,linear-gradient(180deg,#98cef4,#c9e7fc,#cee9fd) right/50% 100% no-repeat"><img src="assets/img/projects/brand-hub.webp" alt="Brand Hub ads analytics dashboard with sales chart and metric cards" loading="lazy" width="1400" height="1050" /></div>
           <div class="proj-body">
             <div class="proj-top"><h4>Brand Hub: Ads Portal</h4></div>
-            <p>Campaign manager and ads-tracking portal for brands, built on my Go Ads Microservice.</p>
-            <ul class="metrics"><li><b>₹5L+</b> revenue/day</li><li><b>Moloco</b> integrated</li></ul>
+            <p>Lets brands run ad campaigns and see exactly what every rupee earns: sales, spend and return, live.</p>
+            <ul class="metrics"><li><b>₹5L+</b> ad revenue a day</li><li><b>Live</b> return on ad spend</li></ul>
             <span class="tags">Golang · Microservices · Ads · Analytics</span>
           </div>
         </div>
       </div>
     </article>
 
-    <!-- 2/4 -->
+    <!-- 2/3 -->
     <article class="stack-card sc-2" style="--i:1">
       <header class="sc-head">
-        <span class="sc-count">2/4</span>
+        <span class="sc-count">2/3</span>
         <div class="sc-title">
           <span class="sc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4V5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M8 10h8M8 13h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
-          <h3>Customer support &amp; agentic AI</h3>
+          <h3>Customer experience</h3>
         </div>
       </header>
       <div class="sc-grid">
@@ -189,8 +190,8 @@
           <div class="proj-media" style="background:linear-gradient(180deg,#c0eeed,#c3e7f1,#bfd5f6) left/50% 100% no-repeat,linear-gradient(180deg,#b9eae1,#beece6,#c7efee) right/50% 100% no-repeat"><img src="assets/img/projects/flowdesk.webp" alt="Flowdesk helpdesk dashboard with KPI tiles, trends and agent workload" loading="lazy" width="1400" height="1050" /></div>
           <div class="proj-body">
             <div class="proj-top"><h4>Flowdesk: Support Platform</h4></div>
-            <p>CityMall’s support platform: in-app chat, agent desk and ticketing for returns, refunds and cancellations.</p>
-            <ul class="metrics"><li><b>Node.js</b> core</li><li><b>Real-time</b> agent desk</li></ul>
+            <p>Helps support teams resolve returns, refunds and cancellations faster, with chat, tickets and agents in one place.</p>
+            <ul class="metrics"><li><b>Chat + tickets</b> in one place</li><li><b>Auto-assigned</b> to agents</li></ul>
             <span class="tags">Node.js · Real-time chat · Ticketing</span>
           </div>
         </div>
@@ -198,52 +199,21 @@
           <div class="proj-media" style="background:linear-gradient(180deg,#c7f5e8,#c1f4e6,#bee4d1) left/50% 100% no-repeat,linear-gradient(180deg,#aed8e8,#c3efe7,#c7f5e8) right/50% 100% no-repeat"><img src="assets/img/projects/citymall-ai-chatbot.webp" alt="CityMall AI support chatbot on a phone with intent, tool call and reply flow" loading="lazy" width="1400" height="1050" /></div>
           <div class="proj-body">
             <div class="proj-top"><h4>CityMall AI Chatbot</h4></div>
-            <p>LangChain support agent with an LLM intent router and tool-calling loop. Escalates to Flowdesk with context.</p>
-            <ul class="metrics"><li><b>Intent</b> router</li><li><b>Tool</b> calling</li><li><b>Memory</b> &amp; state</li></ul>
+            <p>Answers customers instantly, day or night: checks their order, explains refunds and hands off to a person only when needed.</p>
+            <ul class="metrics"><li><b>24/7</b> answers</li><li><b>Instant</b> order lookups</li><li><b>Human</b> hand-off</li></ul>
             <span class="tags">LangChain · LLMs · Agents · Node.js</span>
           </div>
         </div>
       </div>
     </article>
 
-    <!-- 3/4 -->
-    <article class="stack-card sc-3" style="--i:2">
+    <!-- 3/3 -->
+    <article class="stack-card sc-4" style="--i:2">
       <header class="sc-head">
-        <span class="sc-count">3/4</span>
-        <div class="sc-title">
-          <span class="sc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="3" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 18.5h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
-          <h3>Consumer apps</h3>
-        </div>
-      </header>
-      <div class="sc-grid">
-        <div class="proj">
-          <div class="proj-media" style="background:linear-gradient(180deg,#feceb8,#fed5b9,#f1e4ab) left/50% 100% no-repeat,linear-gradient(180deg,#f3dcad,#e8f1c3,#e2f7c7) right/50% 100% no-repeat"><img src="assets/img/projects/dharam.webp" alt="Dharam app showing a personalised devotional good-night status card" loading="lazy" width="1400" height="1050" /></div>
-          <div class="proj-body">
-            <div class="proj-top"><h4>Dharam: Status &amp; Quotes</h4></div>
-            <p>Devotional status videos and quotes, personalised with your name and photo, shared to WhatsApp in one tap.</p>
-            <ul class="metrics"><li><b>Personalised</b> video</li><li><b>1-tap</b> share</li></ul>
-            <span class="tags">Android · Media · Personalisation</span>
-          </div>
-        </div>
-        <div class="proj">
-          <div class="proj-media" style="background:linear-gradient(180deg,#f4f8be,#ecf5c6,#e5f5ce) left/50% 100% no-repeat,linear-gradient(180deg,#d3f4e0,#d0f4e3,#cdf5e5) right/50% 100% no-repeat"><img src="assets/img/projects/promptu.webp" alt="Promptu app with festival prompt packs and an Open in ChatGPT button" loading="lazy" width="1400" height="1050" /></div>
-          <div class="proj-body">
-            <div class="proj-top"><h4>Promptu: AI Photo Prompts</h4></div>
-            <p>Curated AI photo prompts in festival packs. One tap copies the prompt and opens ChatGPT, Gemini or Grok.</p>
-            <ul class="metrics"><li><b>3</b> AI apps</li><li><b>Festival</b> packs</li></ul>
-            <span class="tags">Android · GenAI · Ads</span>
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <!-- 4/4 -->
-    <article class="stack-card sc-4" style="--i:3">
-      <header class="sc-head">
-        <span class="sc-count">4/4</span>
+        <span class="sc-count">3/3</span>
         <div class="sc-title">
           <span class="sc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="7" ry="3" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>
-          <h3>Data, ads &amp; platform</h3>
+          <h3>Growth &amp; automation</h3>
         </div>
       </header>
       <div class="sc-grid sc-grid-3">
@@ -255,20 +225,20 @@
             <div class="mv-row"><span>Platform C</span><i style="--w:80%"></i><b>₹205</b></div>
           </div>
           <div class="proj-body">
-            <div class="proj-top"><h4>Benchmarking Engine</h4></div>
-            <p>Daily price scraping across 10+ platforms, with Vertex AI embeddings matching identical products.</p>
+            <div class="proj-top"><h4>Competitor Price Tracking</h4></div>
+            <p>Checks prices on 10+ shopping platforms every day, so the pricing team always knows where they stand.</p>
             <span class="tags">Python · Scraping · Vertex AI</span>
           </div>
         </div>
         <div class="proj proj-mini">
           <div class="mini-visual mv-sdk" aria-hidden="true">
             <span class="mv-node">Meta</span><span class="mv-node">Google</span><span class="mv-node">InMobi</span>
-            <span class="mv-hub">Java SDK</span>
+            <span class="mv-hub">One ad layer</span>
             <span class="mv-stat">+30%</span>
           </div>
           <div class="proj-body">
-            <div class="proj-top"><h4>In-house Ads SDK</h4></div>
-            <p>Java SDK orchestrating Meta, Google and InMobi ads inside the React Native app.</p>
+            <div class="proj-top"><h4>Smarter In-App Ads</h4></div>
+            <p>Earned 30% more ad revenue from the same app traffic by running Meta, Google and InMobi ads through one smart layer.</p>
             <span class="tags">Java · React Native · AdTech</span>
           </div>
         </div>
@@ -276,48 +246,17 @@
           <div class="mini-visual mv-agents" aria-hidden="true">
             <span class="mv-pct">−90%</span>
             <small>cataloguing workload</small>
-            <div class="mv-chips"><span>Skills</span><span>MCP</span><span>Agents</span></div>
+            <div class="mv-chips"><span>New products</span><span>Bundles</span><span>Price drops</span></div>
           </div>
           <div class="proj-body">
-            <div class="proj-top"><h4>AI Cataloguing Agents</h4></div>
-            <p>Claude skills and MCP agent workflows for SKUs, combos and price drops.</p>
+            <div class="proj-top"><h4>AI Catalogue Assistants</h4></div>
+            <p>AI agents that take over the catalogue team’s repetitive work (new products, bundles, price drops) and cut it by 90%.</p>
             <span class="tags">Claude Code · MCP · Golang</span>
           </div>
         </div>
       </div>
     </article>
 
-  </div>
-</section>
-
-<!-- ============ DARK AI SECTION ============ -->
-<section class="ai" id="ai">
-  <div class="ai-mesh" aria-hidden="true"></div>
-  <div class="container">
-    <h2 class="reveal"><span class="lime">AI</span> Powered<br/>Engineering</h2>
-    <div class="ai-grid">
-      <article class="ai-card">
-        <div>
-          <h3>Agentic Systems</h3>
-          <p>Production agents with LLM intent routing, tool-calling loops, memory and state, plus a clean hand-off to humans when it matters.</p>
-          <a href="#work" class="link">See the chatbot <span aria-hidden="true">→</span></a>
-        </div>
-        <div class="ai-viz flow" aria-hidden="true">
-          <span>User</span><i></i><span class="hl">Intent router</span><i></i><span>Tools</span><i></i><span>Reply</span>
-        </div>
-      </article>
-      <article class="ai-card">
-        <div>
-          <h3>Embeddings &amp; Matching</h3>
-          <p>Vertex AI embeddings and RAG pipelines that map identical products across 10+ platforms for real-time price comparison.</p>
-          <a href="#work" class="link">See the engine <span aria-hidden="true">→</span></a>
-        </div>
-        <div class="ai-viz vectors" aria-hidden="true">
-          <span style="--x:18%;--y:30%"></span><span style="--x:30%;--y:62%"></span><span class="m" style="--x:56%;--y:40%"></span><span class="m" style="--x:62%;--y:46%"></span><span style="--x:80%;--y:24%"></span><span style="--x:76%;--y:72%"></span>
-          <em>0.97 match</em>
-        </div>
-      </article>
-    </div>
   </div>
 </section>
 
@@ -334,11 +273,11 @@
   </div>
   <div class="carousel" tabindex="0" aria-label="Impact numbers">
     <article class="stat-card">
-      <h3>25,000+ Orders<br/>Shipped Every Day</h3>
+      <h3>2 Shopify Apps<br/>Built from Scratch</h3>
       <div class="sv sv-boxes" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
     </article>
     <article class="stat-card">
-      <h3>₹1 Cr+ GMV<br/>Processed Daily</h3>
+      <h3>₹1 Cr+ in Sales<br/>Handled Every Day</h3>
       <div class="sv sv-line" aria-hidden="true"><svg viewBox="0 0 200 90" preserveAspectRatio="none"><path d="M0 80 C30 70 40 50 70 55 S110 30 130 34 S170 10 200 6" fill="none" stroke="#735AE5" stroke-width="3"/><path d="M0 80 C30 70 40 50 70 55 S110 30 130 34 S170 10 200 6 V90 H0Z" fill="url(#g1)"/><defs><linearGradient id="g1" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#735AE5" stop-opacity=".25"/><stop offset="1" stop-color="#735AE5" stop-opacity="0"/></linearGradient></defs></svg></div>
     </article>
     <article class="stat-card">
@@ -354,7 +293,7 @@
       <div class="sv sv-ring" aria-hidden="true"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="#ECE8FD" stroke-width="10"/><circle cx="50" cy="50" r="40" fill="none" stroke="#735AE5" stroke-width="10" stroke-linecap="round" stroke-dasharray="226 251" transform="rotate(-90 50 50)"/></svg><b>90%</b></div>
     </article>
     <article class="stat-card">
-      <h3>10+ Platforms<br/>Benchmarked Daily</h3>
+      <h3>10+ Platforms’ Prices<br/>Tracked Every Day</h3>
       <div class="sv sv-grid" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
     </article>
   </div>
@@ -375,7 +314,7 @@
           <span class="chip">◆ Flowdesk</span><span class="chip">◆ AI Chatbot</span><span class="chip">◆ Catalogue</span><span class="chip">◆ Ads</span><span class="chip">◆ Dropship</span>
         </div>
         <div class="exp-stats">
-          <div><small>Orders / day</small><b>25K+</b></div>
+          <div><small>Experience</small><b>3.5 yrs</b></div>
           <div><small>Ad revenue lift</small><b>+30%</b></div>
         </div>
       </article>
@@ -393,22 +332,13 @@
         </div>
       </article>
 
-      <article class="exp-card exp-mint">
+      <article class="exp-card exp-mint exp-wide">
         <h3>Awards</h3>
         <p class="exp-sub">Hackathons</p>
         <ul class="award-list">
           <li><span class="medal">🏆</span> Winner, Google Build With AI Hackathon</li>
           <li><span class="medal">🏆</span> Winner, Smart India Hackathon</li>
           <li><span class="medal">🥈</span> Runner-up, Zomato India Hackathon</li>
-        </ul>
-      </article>
-
-      <article class="exp-card exp-lilac">
-        <h3>Side Projects</h3>
-        <p class="exp-sub">Built for fun, shipped for real</p>
-        <ul class="award-list">
-          <li><span class="medal">🧩</span> <a href="https://supersubt.github.io/Super-Subtitles/" target="_blank" rel="noopener">Super Subtitles</a>: a Chrome extension for learning English with YouTube subtitles</li>
-          <li><span class="medal">🛍️</span> <a href="https://apps.shopify.com/dropship-india" target="_blank" rel="noopener">Dropship India</a> on the Shopify App Store</li>
         </ul>
       </article>
     </div>
@@ -418,7 +348,7 @@
 <!-- ============ INTEGRATIONS MARQUEE ============ -->
 <section class="section section-dots" aria-labelledby="integrations-h">
   <div class="container">
-    <h2 id="integrations-h" class="reveal">Anywhere, Any Stack: Integrated<br/>with the Partners That Matter</h2>
+    <h2 id="integrations-h" class="reveal">Plugged Into the Platforms<br/>Your Business Already Uses</h2>
   </div>
   <div class="marquee marquee-light" data-speed="45">
     <div class="marquee-track">
@@ -449,8 +379,8 @@
 <!-- ============ STACK (dark + lime) ============ -->
 <section class="dev" id="stack">
   <div class="container">
-    <h2 class="reveal">Engineered with<br/><span class="lime">Modern Tooling</span></h2>
-    <p class="dev-sub">Fast languages, solid data stores, infrastructure that deploys itself.</p>
+    <h2 class="reveal">Under the<br/><span class="lime">Hood</span></h2>
+    <p class="dev-sub">For the technical folks: what I build with.</p>
     <div class="dev-grid">
       <div class="dev-col">
         <h3><span class="diamond" aria-hidden="true">◈</span> Languages</h3>
@@ -479,13 +409,11 @@
 <section class="contact" id="contact">
   <div class="hero-glow contact-glow" aria-hidden="true"></div>
   <div class="container contact-inner">
-    <p class="eyebrow"><span class="dot"></span> Say hello</p>
-    <h2>Let’s Ship Something<br/>That Scales.</h2>
-    <p class="lede">I like ownership: ambiguous problems, high-traffic systems, and products people use every day.</p>
+    <h2>Let’s talk.</h2>
+    <p class="lede">Email is the quickest way to reach me.</p>
     <div class="contact-actions">
       <a class="btn btn-solid btn-lg" href="mailto:nihalgupta11213@gmail.com">Email me</a>
-      <button class="btn btn-outline btn-lg" id="copy-email" data-email="nihalgupta11213@gmail.com">Copy email</button>
-      <a class="btn btn-ghost btn-lg" href="assets/Nihal-Gupta-Resume.pdf" target="_blank" rel="noopener">Download résumé ↓</a>
+      <a class="btn btn-ghost btn-lg" href="assets/Nihal-Gupta-Resume.pdf" target="_blank" rel="noopener">Résumé ↓</a>
     </div>
   </div>
 </section>
