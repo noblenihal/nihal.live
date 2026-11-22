@@ -141,7 +141,9 @@ ul { margin: 0; padding: 0; list-style: none; }
 .eyebrow .dot { width: 7px; height: 7px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 0 4px rgba(34, 197, 94, .18); }
 
 .hero h1 { font-size: clamp(36px, 5vw, 58px); line-height: 1.1; max-width: 13.5em; }
-.hero-sub { margin-top: 18px; font-size: 17px; max-width: 34em; color: var(--body); }
+.hero-tagline { margin-top: 20px; font-family: var(--font-display); font-size: clamp(19px, 1.9vw, 23px); font-weight: 500; letter-spacing: -0.01em; color: var(--ink); }
+.hero-tagline span { color: var(--purple); }
+.hero-sub { margin-top: 8px; font-size: 15.5px; max-width: 36em; color: #6b6b67; }
 
 .hero-label { margin-top: 36px; font-family: var(--font-display); font-weight: 600; color: var(--ink); font-size: 18px; }
 .hero-form {
