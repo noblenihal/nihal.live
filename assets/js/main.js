@@ -75,8 +75,23 @@
     });
   };
   const requestStack = () => { if (!ticking) { ticking = true; requestAnimationFrame(updateStack); } };
+
+  // If a card is taller than the space below its sticky offset, stick it higher
+  // so its bottom (copy, pills) is always reachable before the next card covers it.
+  const setStickTops = () => {
+    const navH = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--nav-h')) || 64;
+    cards.forEach((card, i) => {
+      card.style.removeProperty('--stick-top');
+      if (!stackMQ.matches) return;
+      const desired = navH + 24 + i * 22;
+      const maxTop = window.innerHeight - card.offsetHeight - 16;
+      if (maxTop < desired) card.style.setProperty('--stick-top', `${Math.round(maxTop)}px`);
+    });
+  };
+  setStickTops();
+  window.addEventListener('load', () => { setStickTops(); requestStack(); });
+  window.addEventListener('resize', () => { setStickTops(); requestStack(); });
   window.addEventListener('scroll', requestStack, { passive: true });
-  window.addEventListener('resize', requestStack);
   updateStack();
 
   /* ---------- Impact carousel ---------- */
